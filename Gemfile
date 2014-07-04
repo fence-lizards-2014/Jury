@@ -29,6 +29,7 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 
 gem 'debugger'
 
+gem 'clearance'
 group :development, :test do
   gem 'rspec-rails', '=2.14'
   gem 'factory_girl_rails'
