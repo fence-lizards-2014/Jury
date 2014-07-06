@@ -5,7 +5,7 @@
 	<ul>
 		<% @my_invites.each do |my_invite| %>
 			<li><%= my_invite.users[0].user_name %> has sent you a <a href="/cases/<%= my_invite.id %>">challenge!</a></li>
-		<% end %>	
+		<% end %>
 	</ul>
 </section>
 
@@ -33,7 +33,7 @@
  		 	<li><%= my_case.status %></li>
  		</ul>
 	<% end  %>
-	
+
 </section>
 
 

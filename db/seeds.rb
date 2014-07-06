@@ -50,8 +50,8 @@ CasesUser.create(case_id: 10, user_id: 5, party: "defendant")
 
 
 puts "Test evidence seeded ----------->>>"
-Evidence.create(argument: "MJ is awesome", video_url: "http://test.com", cases_user_id: 1)
-Evidence.create(argument: "MJ is not awesome", video_url: "http://test.com", cases_user_id: 2)
+Evidence.create(argument: "MJ is awesome", video_url: "http://test.com", cases_user_id: 1, case_id: 1, user_id: 1)
+Evidence.create(argument: "MJ is not awesome", video_url: "http://test.com", cases_user_id: 2, case_id: 1, user_id: 2)
 
 puts "Test comments seeded ----------->>>"
 Comment.create(content:"hello", user_id:1, case_id: 1)
