@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
   has_many :cases, through: :cases_users
 
   has_many :comments
+  has_many :evidences
 
   # users.password_hash in the database is a :string
 

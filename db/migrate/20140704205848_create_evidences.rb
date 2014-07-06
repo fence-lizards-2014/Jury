@@ -4,7 +4,8 @@ class CreateEvidences < ActiveRecord::Migration
       t.text :argument
       t.string :video_url
       t.string :photo_url
-      t.belongs_to :cases_user
+      t.belongs_to :case
+      t.belongs_to :user
       t.timestamps
     end
   end

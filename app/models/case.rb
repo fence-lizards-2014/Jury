@@ -3,6 +3,7 @@ class Case < ActiveRecord::Base
   has_many :cases_users
   has_many :users, through: :cases_users
   has_many :comments
+  has_many :evidences
   validates :title, presence: true
   validates :status, presence: true
 
