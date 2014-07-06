@@ -54,5 +54,5 @@ Evidence.create(argument: "MJ is awesome", video_url: "http://test.com", cases_u
 Evidence.create(argument: "MJ is not awesome", video_url: "http://test.com", cases_user_id: 2)
 
 puts "Test comments seeded ----------->>>"
-Comment.create(content:"hello", user_id:1,case_id:1)
+Comment.create(content:"hello", user_id:1, case_id: 1)
 

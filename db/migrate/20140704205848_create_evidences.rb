@@ -6,6 +6,7 @@ class CreateEvidences < ActiveRecord::Migration
       t.string :photo_url
       t.belongs_to :case
       t.belongs_to :user
+      t.belongs_to :cases_user
       t.timestamps
     end
   end
