@@ -1,8 +1,10 @@
 class SessionsController < ApplicationController
 
   def create
+    # CR use email as a unique user id/ finder
     @user = User.find_by_user_name(params["user_name"])
     if @user
+      # CR see has_secure_password
       if @user.password == params[:password]
           session[:id] = @user.id
           redirect_to dashboard_path
@@ -18,7 +20,7 @@ class SessionsController < ApplicationController
     reset_session
     redirect_to root_path
   end
-
+# CR move to application controller
   def current_user
     @current_user ||= User.find(session[:user_id])
   end

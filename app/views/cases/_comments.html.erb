@@ -1,9 +1,11 @@
 <div class="commentsBox">
 
+<!-- # CR what is real_case_id? why form_tag and not form_for -->
   <%= form_tag case_comments_path(@case) do %>
     <%= label_tag "Comment" %>
     <%= text_area_tag :comment %>
     <%= submit_tag "Submit Argument" %>
+    <!-- # CR you shouldn't need either of these hidden fields -->
     <%= hidden_field_tag :real_case_id, @case.id %>
     <%= hidden_field_tag :user_id, session[:id] %>
   <% end %>
@@ -16,6 +18,7 @@
     <%= comment.content %> -<%= User.find(comment.user_id).user_name %>
     <%= button_to "Like", votes_path(direction: "up", comment_id: comment.id, user_id: session[:id]) %>
     <%= button_to "Dislike", votes_path(direction: "down", comment_id: comment.id, user_id: session[:id]) %>
+   <!-- # CR no AR logic in views -->
     Up-Votes:<%= comment.votes.where(:direction => "up").count %>
     <br>
     Down-Votes:<%= comment.votes.where(:direction => "down").count %>

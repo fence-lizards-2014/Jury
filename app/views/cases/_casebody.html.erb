@@ -1,3 +1,6 @@
+<!-- # CR make this a model method and render appropriate partial -->
+
+<!-- # CR factor this if/elsif out of the view or at least into partials put the logic in a view helper -->
 <% if @case.status == "pending" && session[:id] == @case.cases_users[0].user_id %>
 	<p> Hi Plaintiff, view the case before it's live</p>
 
@@ -50,6 +53,7 @@
 		<div class="vote-defendant">
     	<%= button_to "Vote", ballots_path(role: "defendant", case_id: @case.id) %>
     	<br>
+    	<!-- #CR no accessing AR from view - move this to the model! -->
     	<%= Ballot.where(:role => "defendant", :case_id => @case.id).count %>
 		</div>
 

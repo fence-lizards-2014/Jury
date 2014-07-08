@@ -4,6 +4,7 @@ require 'spec_helper'
 describe SessionsController do
 
   describe "POST #create" do
+    # CR use a factory
     before(:each) do
       @user = User.new
       @user.user_name = "bob"

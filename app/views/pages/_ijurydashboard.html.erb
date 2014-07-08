@@ -1,9 +1,11 @@
+<!-- # CR use view helper method current_user -->
 <% if session[:id] %>
 	<section class="dashboard-alerts">
 		<h3>Alerts</h3>
 		<ul>
 			<% invite_count = 0 %>
 			<% @my_invites.each do |my_invite| %>
+			<!-- # CR no AR logic in views - move to model or view helper -->
 				<% if my_invite.users[0].id != session[:id] %>
 
 
@@ -31,6 +33,7 @@
 
 		<% @my_cases.each do |my_case| %>
 			<ul>
+				<!-- # CR use link_to -->
 		  	<li><a href="/cases/<%= my_case.id %>"><%= my_case.title  %></a></li>
 		  	<li><%= my_case.users[0].user_name %> v. <%= my_case.users[1].user_name %></li>
 
@@ -48,6 +51,7 @@
 
 	<% @active_cases.each do |active_case| %>
 		<ul>
+			<!-- # CR use link_to also with STI you have defendant and plaintif instead of users[0] -->
   		<li><a href="/cases/<%= active_case.id %>"><%= active_case.title  %></a></li>
 			<li><%= active_case.users[0].user_name %> v. <%= active_case.users[1].user_name %></li>
 		</ul>
@@ -55,6 +59,7 @@
 </section>
 
 <section class="cases-showclosed">
+	<!-- # CR use a partial for open / closed cases -->
 <h3>All Closed Cases</h3>
 <h5>Total <%= @closed_cases.count  %> closed cases</h5>
 

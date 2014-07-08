@@ -10,6 +10,7 @@ class User < ActiveRecord::Base
 
   # users.password_hash in the database is a :string
 
+# CR in rails you just need has_secure_password
   include BCrypt
 
   def password
