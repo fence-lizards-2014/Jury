@@ -18,6 +18,14 @@ class CasesController < ApplicationController
     @case = Case.find(params[:id])
     session[:case_id] = params[:id]
 
+    # Countdown timer feature
+    # remaining_seconds = Time.now - @case.active_end
+    # @remaining_days = remaining_seconds.divmod(86400)[0]
+    # @remaining_hours = @remaining_days.divmod(86400)[1]/24
+    # @remaining_minutes = @remaining_hours.divmod[1]/60
+    # @remaining_seconds = @remaining_minutes.divmod[1]
+
+
   end
 
 end
