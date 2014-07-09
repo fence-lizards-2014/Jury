@@ -352,3 +352,122 @@ background-image:url('wood.jpg');
 
 }
 /* This button was generated using CSSButtonGenerator.com */
+
+
+/***************************************************************/
+/***************************************************************/
+/**************  The following is CSS styling for  *************/
+/**************       the cases/show page          *************/
+/***************************************************************/
+/***************************************************************/
+
+#body_middle_main {
+  border: solid red;
+}
+
+#case_wrapper {
+  background-image:url('http://newevolutiondesigns.com/images/freebies/texture-wallpaper-18.jpg');
+}
+
+.bothPeople {
+  margin: auto;
+}
+
+.person1 {
+  border: dotted blue;
+  height: 525px;
+  color: white;
+  background-image:url('http://newevolutiondesigns.com/images/freebies/texture-wallpaper-18.jpg');
+  width: 46%;
+  float: left;
+  margin: auto 5px;
+  display: block;
+}
+
+.person1 p {
+  text-align: center;
+}
+
+.person2 {
+  border: dotted green;
+  height: 525px;
+  color: white;
+  background-image:url('http://newevolutiondesigns.com/images/freebies/texture-wallpaper-18.jpg');
+  width: 46%;
+  float: left;
+  margin: auto 5px;
+  display:block;
+}
+
+.person2 p {
+  text-align: center;
+}
+
+.video-thumbnail {
+  margin: auto;
+}
+
+.video1 {
+  border: solid yellow;
+}
+
+.video1 iframe #ytplayer {
+
+}
+
+.argumentText1 {
+  border: solid blue;
+  height: 150px;
+  margin: 15px auto;
+  text-align: center
+}
+
+.video2 {
+  border: solid orange;
+}
+
+.argumentText2 {
+  border: solid green;
+  height: 150px;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.vote-plaintiff {
+  border: solid black;
+  display: block;
+  margin: 5px;
+}
+
+.vote-defendant {
+  border: solid purple;
+  display: block;
+  margin: 5px;
+}
+
+.case_title {
+font-weight: bold;
+text-align: center;
+font-size: 40px;
+color: white;
+}
+
+.case_summary {
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  color: white;
+}
+
+/*.commentsBox {
+  float: clear;
+  width: 500px;
+  margin: auto;
+  display: block;
+}
+*/
+
+iframe {
+  margin: auto;
+  display: block;
+}

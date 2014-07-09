@@ -1,15 +1,15 @@
-	<h3>Case</h3>
+	<div id="case_wrapper">
+	<h3><div class="case_title"> Case: <%= @case.title %></div></h3>
 
-	<div><%= @case.title %></div>
-
-	<div><%= @case.summary %></div>
-
+	<p><div class="case_summary"><%= @case.summary %></div></p>
+	<div class="both_people">
 	<div class="person1">
 
-		PLAINTIFF: <%= @case.users[0].user_name %>
+		<p>PLAINTIFF: <%= @case.users[0].user_name %></p>
 
 		<div class="argumentText1">
-			PLAINTIFF's ARGUMENT: <%= @case.cases_users[0].evidence.argument %>
+			<h3>Plaintiff's Argument</h3>
+			<p><%= @case.cases_users[0].evidence.argument %></p>
 		</div>
 
 		<div class="video1">
@@ -26,10 +26,11 @@
 
 	<div class="person2">
 
-		DEFENDANT:<%= @case.users[1].user_name %>
+		<p>DEFENDANT: <%= @case.users[1].user_name %></p>
 
 		<div class="argumentText2">
-			Defendant's ARGUMENT: <%= @case.cases_users[1].evidence.argument %>
+			<h3> Defendant's Argument </h3>
+			<p><%= @case.cases_users[1].evidence.argument %></p>
 		</div>
 
 		<div class="video2">
@@ -44,3 +45,5 @@
 		</div>
 
 	</div>
+</div>
+</div>
