@@ -12,13 +12,14 @@
 
 	 <%= render partial: "activecase" %>
 
+
   <div class="commentsBox">
     <% @comment = Comment.new %>
     <%= form_for [@case, @comment], :url => case_comments_path(@case, @comment), remote: true do |f| %>
         <%= f.label "Comment" %>
         <%= f.text_area :body, cols: 40, rows: 7 %>
         <%= f.submit "Submit"%>
-      <% end %>
+    <% end %>
 
   <div id = "commentslist">
   <br>
@@ -32,6 +33,7 @@
   <% end %>
 </div>
 </div>
+
 
 <% elsif @case.status == "closed"  %>
 

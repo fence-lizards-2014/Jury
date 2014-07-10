@@ -361,12 +361,31 @@ background-image:url('wood.jpg');
 /***************************************************************/
 /***************************************************************/
 
-#body_middle_main {
-  border: solid red;
+
+#case_heading{
+  background-image:url('http://newevolutiondesigns.com/images/freebies/texture-wallpaper-18.jpg');
+  margin: auto;
 }
 
-#case_wrapper {
+body {
   background-image:url('http://newevolutiondesigns.com/images/freebies/texture-wallpaper-18.jpg');
+}
+
+.case_title {
+font-weight: bold;
+text-align: center;
+font-size: 30px;
+color: white;
+width: 92%;
+}
+
+.case_summary {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  width: 92%;
+  display: block;
+  margin: auto;
 }
 
 .bothPeople {
@@ -374,14 +393,11 @@ background-image:url('wood.jpg');
 }
 
 .person1 {
-  border: dotted blue;
   height: 525px;
   color: white;
-  background-image:url('http://newevolutiondesigns.com/images/freebies/texture-wallpaper-18.jpg');
   width: 46%;
   float: left;
   margin: auto 5px;
-  display: block;
 }
 
 .person1 p {
@@ -389,14 +405,11 @@ background-image:url('wood.jpg');
 }
 
 .person2 {
-  border: dotted green;
   height: 525px;
   color: white;
-  background-image:url('http://newevolutiondesigns.com/images/freebies/texture-wallpaper-18.jpg');
   width: 46%;
   float: left;
   margin: auto 5px;
-  display:block;
 }
 
 .person2 p {
@@ -407,67 +420,52 @@ background-image:url('wood.jpg');
   margin: auto;
 }
 
-.video1 {
-  border: solid yellow;
-}
-
-.video1 iframe #ytplayer {
-
-}
-
 .argumentText1 {
-  border: solid blue;
   height: 150px;
   margin: 15px auto;
   text-align: center
 }
 
-.video2 {
-  border: solid orange;
+iframe {
+  margin: auto;
+  display: block;
 }
 
 .argumentText2 {
-  border: solid green;
   height: 150px;
   margin: 15px auto;
   text-align: center;
 }
 
 .vote-plaintiff {
-  border: solid black;
   display: block;
   margin: 5px;
 }
 
 .vote-defendant {
-  border: solid purple;
   display: block;
   margin: 5px;
 }
 
-.case_title {
-font-weight: bold;
-text-align: center;
-font-size: 40px;
-color: white;
+.vote-plaintiff-button {
+  background-color:red;
+  width: 100px;
 }
 
-.case_summary {
-  text-align: center;
-  margin: auto;
-  font-size: 20px;
-  color: white;
+.vote-defendant-button {
+  background-color:red;
+  width: 100px;
 }
 
-/*.commentsBox {
+.commentsBox {
   float: clear;
   width: 500px;
   margin: auto;
   display: block;
+  color: white;
 }
-*/
 
-iframe {
-  margin: auto;
-  display: block;
+.commentslist {
+  color: white;
 }
+
