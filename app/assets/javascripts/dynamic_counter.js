@@ -31,7 +31,7 @@ function startCountdown() {
 			  	console.log("background call failed")
 			  });	
 
-			}, 1000);
+			}, 3000);
 
 	  }
 
