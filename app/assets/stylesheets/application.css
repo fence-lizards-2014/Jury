@@ -377,6 +377,7 @@ text-align: center;
 font-size: 30px;
 color: white;
 width: 92%;
+padding: 10px;
 }
 
 .case_summary {
@@ -398,6 +399,7 @@ width: 92%;
   width: 46%;
   float: left;
   margin: auto 5px;
+  border: blue solid;
 }
 
 .person1 p {
@@ -410,6 +412,7 @@ width: 92%;
   width: 46%;
   float: left;
   margin: auto 5px;
+  border: red solid;
 }
 
 .person2 p {
@@ -448,13 +451,11 @@ iframe {
 }
 
 .vote-plaintiff-button {
-  background-color:red;
-  width: 100px;
+  text-align: center;
 }
 
 .vote-defendant-button {
-  background-color:red;
-  width: 100px;
+  text-align: center;
 }
 
 .commentsBox {

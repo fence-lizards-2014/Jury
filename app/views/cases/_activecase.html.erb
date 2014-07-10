@@ -19,7 +19,7 @@
 		</div>
 
 		<div class="vote-plaintiff">
-  		<div class="vote-plaintiff-button"><%= button_to "Vote", case_ballots_path(role: "plaintiff", case_id: @case.id) %></div>
+  		<div class="vote-plaintiff-button">Vote for the plaintiff!<%= button_to "Vote", case_ballots_path(role: "plaintiff", case_id: @case.id), :remote => true %></div>
       <%= Ballot.where(:role => "plaintiff", :case_id => @case.id).count %>
 		</div>
 
@@ -41,7 +41,7 @@
 
 
 		<div class="vote-defendant">
-    	<div class="vote-defendant-button"><%= button_to "Vote", case_ballots_path(role: "defendant", case_id: @case.id) %></div>
+    	<div class="vote-defendant-button">Vote for the defendant!<%= button_to "Vote", case_ballots_path(role: "defendant", case_id: @case.id) %></div>
     	<%= Ballot.where(:role => "defendant", :case_id => @case.id).count %>
 		</div>
 
