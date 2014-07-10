@@ -1,13 +1,3 @@
-function bindEvents(){
-
-  $('.vote-defendant').on("ajax:success", addDefendant)
-  $('.vote-plaintiff').on("ajax:success",addPlaintiff)
-  $('.commentsBox').on("ajax:success", addComment)
-  $('.commentsBox').on('ajax:success', '#like', updateVote)
-  $('.commentsBox').on('ajax:success', '#dislike', updateVote)
-  // $(document).on('ajax:error', '#dislike', wtf)
-}
-
 function addComment(e, data, status, xhr){
   $('.commentsBox').append(data);
   $('#comment_body').val('');
