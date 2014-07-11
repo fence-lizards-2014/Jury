@@ -13,7 +13,7 @@ User.create(user_name: "kingadam", email: "kingadam@test.com", password: "123")
 
 puts "Creating some active cases ----------->>>"
 # akimeister v. donkeykang - active case
-Case.create(title: "The Kid is Not My Son", summary: "Billie Jean is not my lover.... she took my soul and said that I was the one. But...", status: "active", active_start: Time.now, active_end: Time.now + countdown_time1)
+Case.create(title: "The Kid is Not My Son", summary: "Billie Jean is not my lover.... she took my soul and said that I was the one. But...", status: "active", active_start: Time.now, active_end: Time.now + countdown_time3)
 CasesUser.create(case_id: 1, user_id: 1, party: "plaintiff")
 CasesUser.create(case_id: 1, user_id: 2, party: "defendant")
 Evidence.create(argument: "Look, there's just no doubt that MJ is truly awesome.  Vote for me!", video_url: "Zi_XLOBDo_Y", cases_user_id: 1)
@@ -25,7 +25,7 @@ Comment.create(body:"Oh come on guys.  The real question is whether he is black 
 Comment.create(body:"Point taken.", user_id:5,case_id:1)
 Comment.create(body:"We shouldn't be talking about MJ.  Time to open a case for Teenage Mutant Ninja Turtles!", user_id:4,case_id:1)
 # basher v. papajons
-Case.create(title: "You are NOT a supermodel", summary: "Pabico thinks he's so sexy, but not so much says I.  Like seriously.", status: "active", active_start: Time.now, active_end: Time.now + countdown_time1)
+Case.create(title: "You are NOT a supermodel", summary: "Pabico thinks he's so sexy, but not so much says I.  Like seriously.", status: "active", active_start: Time.now, active_end: Time.now + countdown_time4)
 CasesUser.create(case_id: 2, user_id: 4, party: "plaintiff")
 CasesUser.create(case_id: 2, user_id: 3, party: "defendant")
 Evidence.create(argument: "papajons is not a super model.  He needs to perfect his cat walk!", video_url: "hUcqPQizglE", cases_user_id: 3)
