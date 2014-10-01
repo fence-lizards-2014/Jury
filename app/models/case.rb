@@ -1,8 +1,7 @@
 class Case < ActiveRecord::Base
-
-  attr_accessible :title, :status, :winner, :summary, :active_start, :active_end
-  has_many :cases_users
-  has_many :users, through: :cases_users
+  # Removed status, winner, active_start, active_end
+  attr_accessible :title, :summary, :user_id
+  belongs_to :user
   has_many :comments
   validates :title, presence: true
 
