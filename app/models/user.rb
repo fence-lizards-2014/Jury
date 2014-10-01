@@ -2,9 +2,9 @@ require 'bcrypt'
 
 class User < ActiveRecord::Base
   attr_accessible :email, :user_name, :password
-  # linking should be available for both models
-  has_many :cases_users
-  has_many :cases, through: :cases_users
+  # # linking should be available for both models
+  # has_many :cases_users
+  has_many :cases
 
   has_many :comments
 

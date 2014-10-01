@@ -11,31 +11,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140706211949) do
-
-  create_table "ballots", :force => true do |t|
-    t.integer  "user_id"
-    t.integer  "case_id"
-    t.string   "role"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
+ActiveRecord::Schema.define(:version => 20140705001208) do
 
   create_table "cases", :force => true do |t|
     t.string   "title"
     t.string   "summary"
-    t.string   "status",       :default => "pending"
-    t.string   "winner"
-    t.datetime "active_start"
-    t.datetime "active_end"
-    t.datetime "created_at",                          :null => false
-    t.datetime "updated_at",                          :null => false
-  end
-
-  create_table "cases_users", :force => true do |t|
-    t.integer  "case_id"
     t.integer  "user_id"
-    t.string   "party"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -52,9 +33,9 @@ ActiveRecord::Schema.define(:version => 20140706211949) do
     t.text     "argument"
     t.string   "video_url"
     t.string   "photo_url"
-    t.integer  "cases_user_id"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.integer  "case_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "users", :force => true do |t|
